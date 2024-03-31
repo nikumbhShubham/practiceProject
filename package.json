@@ -1,0 +1,18 @@
+{
+  "name": "newproject",
+  "version": "1.0.0",
+  "description": "this is new project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "backend",
+    "MERN",
+    "stack",
+    "practice",
+    "learning"
+  ],
+  "author": "Shubham Nikumbh",
+  "license": "ISC"
+}
