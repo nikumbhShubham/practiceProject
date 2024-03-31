@@ -2,9 +2,10 @@
   "name": "newproject",
   "version": "1.0.0",
   "description": "this is new project",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "echo \"nodemon src/index.js"
   },
   "keywords": [
     "backend",
@@ -14,5 +15,8 @@
     "learning"
   ],
   "author": "Shubham Nikumbh",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
 }
