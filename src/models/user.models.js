@@ -2,6 +2,7 @@ import mongoose, { Schema } from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from 'bcrypt'
 import { Video } from "./video.model.js";
+
 const userSchema = new Schema(
     {
         username: {
@@ -21,7 +22,7 @@ const userSchema = new Schema(
             trim: true,
 
         },
-        fullname: {
+        fullname : {
             type: String,
             required: [true, "fullname is required"],
             trim: true,
