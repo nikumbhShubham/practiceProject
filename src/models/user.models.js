@@ -38,8 +38,8 @@ const userSchema = new Schema(
 
         },
         watchHistory: [{
-         type: Schema.Types.ObjectId,
-         ref:Video
+            type: Schema.Types.ObjectId,
+            ref: Video
         }],
 
         password: {
@@ -78,10 +78,12 @@ userSchema.methods.generateAccessToken = function (password) {
         }
     )
 }
-userSchema.methods.generateRefreshToken = async function (password) {
-    return jwt.sign({
-        _id: this._id,
-    },
+userSchema.methods.generateRefreshToken = function(){
+    return jwt.sign(
+        {
+            _id: this._id,
+            
+        },
         process.env.REFRESH_TOKEN_SECRET,
         {
             expiresIn: process.env.REFRESH_TOKEN_EXPIRY
